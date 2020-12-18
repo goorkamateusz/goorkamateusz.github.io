@@ -13,13 +13,36 @@
   <link rel="Stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
-  <section>
-    <a href="https://bit.ly/maatiug-polecajki">☑ Polecajki!</a>
+  <section class="first">
+    <header>
+      <a id="github-url">Github</a>
+    </header>
+    <main>
+      <div class="cols-cont" id="profile" style="display:none">
+        <div class="smaller-col col">
+          <img id="avatar-img">
+        </div>
+        <div class="bigger-col col">
+          <p id="my-name"></p>
+          <p id="my-login"></p>
+          <p id="bio"></p>
+          <a id="email" class="profile-data"></a>
+          <a id="location" class="profile-data"></a>
+          <a id="company" class="profile-data"></a>
+        </div>
+      </div>
+    </main>
   </section>
 
-  <script>
-    document.location.href = "https://bit.ly/maatiug-polecajki";
-  </script>
+  <section>
+    <a href="https://bit.ly/maatiug-polecajki" class="important">☑ Polecajki!</a>
+  </section>
+
+  <section>
+    <div class="repos-list" id="repos-list"></div>
+  </section>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

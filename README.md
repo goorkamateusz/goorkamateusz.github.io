@@ -1,2 +1,6 @@
-# maatiug.github.io
-Moja stronka z **polecajkami**, materiałami i portalami na których można mnie znaleźć!
+See:
+[maatiug.github.io](maatiug.github.io)
+
+- My github profile;
+- My repos list;
+- Polecajki!
