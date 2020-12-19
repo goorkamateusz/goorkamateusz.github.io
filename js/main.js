@@ -82,11 +82,11 @@ function inc_stat(){
         $.get( "https://bit.ly/3p6iVZS" )
 }
 
-
 $(document).ready(function(){
 
     const username = "maatiug"
     github = new GithubUser( username );
+
 
     $.get(
         github.get_url(),
@@ -97,6 +97,10 @@ $(document).ready(function(){
             github.print_repo("#repos-list")
         }
     )
+
+    $(".social").each(function(id){
+        $(this).css("display", "flex").hide().delay(500*id).fadeIn(1000)
+    })
 
     inc_stat()
 })
