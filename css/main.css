@@ -97,11 +97,13 @@ section main {
 .repos-list {
 	display:flex;
 	margin:auto;
-	flex-direction: row;
+	flex-direction:row;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 .repo {
+	flex-direction:row;
+	flex-wrap:wrap;
 	width:340px;
 	max-width:40%;
 	min-height:100px;
@@ -112,19 +114,32 @@ section main {
 	background-color:#0f0f0f;
 	box-shadow:3px 3px 5px 0 #0f0f0f;
 }
-.repo #name {
-	text-align:left;
+.repo > * {
 	margin-left:0px;
+}
+.repo .svg {
+	order:1;
+	width:7%;
+	align-self:center;
+	vertical-align:middle;
+}
+.repo #name {
+	order:0;
+	align-self:center;
+	width:93%;
+	text-align:left;
 	font-size:16px;
 	font-weight:600;
 }
 .repo #description {
+	order:2;
+	width:100%;
 	font-size:12px;
-	margin-left:0px;
 	color:#666666;
 }
 .repo #language {
-	margin-left:0px;
+	order:4;
+	width:100%;
 	font-size:14px;
 	font-weight:700;
 	color:#858585;
@@ -143,4 +158,12 @@ section main {
 }
 .important:hover {
 	background-color:#4d5a5d;
+}
+
+/* Image */
+.fork * {
+	fill:#c38f58;
+}
+.star {
+	fill:#a07ac4;
 }
