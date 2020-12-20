@@ -50,6 +50,14 @@ section main {
 	margin:5px;
 }
 
+/* Section styles */
+section.wide {
+	max-width:1024px;
+}
+section.wide main {
+	flex-wrap:wrap;
+}
+
 /* Main of section */
 .cols-cont {
 	flex-direction: row;
@@ -198,12 +206,27 @@ section main {
 }
 
 /* No JS layout */
-#no-js .social-cont {
+#no-js .wide main {
 	flex-direction:column;
 }
-#no-js .social-cont > * {
+#no-js .wide main > * {
 	margin:12px auto;
 }
 #js .social {
 	display:none;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: #424242;
+	border: none;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #4d5a5e;
 }
