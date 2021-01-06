@@ -84,7 +84,7 @@ function inc_stat(){
 
 $(document).ready(function(){
 
-    const username = "maatiug"
+    const username = "goorkamateusz"
     github = new GithubUser( username );
 
 
