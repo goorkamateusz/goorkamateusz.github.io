@@ -18,6 +18,10 @@ class Repo {
         return $contener
     }
 
+    echo_see_more(){
+
+    }
+
     echo_module( info )
     { return $('<div id="'+info+'"></div>').text(this.data[ info ]) }
 
@@ -30,6 +34,8 @@ class Repo {
     static get_repo_list( data ){
         var repos_list = []
         data.forEach( repo_data => repos_list.push( (new Repo( repo_data )).echo() ) )
+        // repos_list.push( echo_see_more )
+        // todo
         return repos_list
     }
 

@@ -1,8 +1,8 @@
 /* General */
-body {
+body, html {
 	display:flex;
-	width:100%;
-	margin:0;
+	width:98%;
+	margin:1%;
 	justify-content:center;
 	flex-direction:column;
 
@@ -29,7 +29,7 @@ body section {
 	display:flex;
 	width:100%;
 	min-height:60px;
-	max-width:800px;
+	max-width:1024px;
 	margin:20px auto;
 	justify-content:center;
 	flex-direction:column;
@@ -49,19 +49,14 @@ section footer,
 section main {
 	width:100%;
 	margin:5px;
+	flex-wrap:wrap;
 }
 section header {
+	max-width:800px;
+	margin:auto;
 	color:#4d5a5d;
 	font-weight: 700;
 	font-size:95%;
-}
-
-/* Section styles */
-section.wide {
-	max-width:1024px;
-}
-section.wide main {
-	flex-wrap:wrap;
 }
 
 /* Main of section */
@@ -112,6 +107,7 @@ section.wide main {
 
 /* Github repos */
 .repos-list {
+	width:800px;
 	display:flex;
 	margin:auto;
 	flex-direction:row;
@@ -121,8 +117,8 @@ section.wide main {
 .repo {
 	flex-direction:row;
 	flex-wrap:wrap;
-	width:340px;
-	max-width:40%;
+	width:300px;
+	max-width:80%;
 	min-height:100px;
 	margin:6px;
 	padding:4px 8px;
@@ -148,7 +144,7 @@ section.wide main {
 	font-size:16px;
 	font-weight:600;
 }
-.repo #descripftion {
+.repo #description {
 	order:2;
 	width:100%;
 	font-size:12px;
