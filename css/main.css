@@ -50,6 +50,11 @@ section main {
 	width:100%;
 	margin:5px;
 }
+section header {
+	color:#4d5a5d;
+	font-weight: 700;
+	font-size:95%;
+}
 
 /* Section styles */
 section.wide {
@@ -143,7 +148,7 @@ section.wide main {
 	font-size:16px;
 	font-weight:600;
 }
-.repo #description {
+.repo #descripftion {
 	order:2;
 	width:100%;
 	font-size:12px;
@@ -212,6 +217,9 @@ section.wide main {
 }
 #no-js .wide main > * {
 	margin:12px auto;
+}
+#no-js .async {
+	display: none;
 }
 #js .social {
 	display:none;
