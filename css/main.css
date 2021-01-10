@@ -1,5 +1,5 @@
 /* General */
-body, html {
+body {
 	display:flex;
 	width:98%;
 	margin:1%;
@@ -54,7 +54,7 @@ section main {
 section header {
 	max-width:800px;
 	margin:auto;
-	color:#4d5a5d;
+	color:#424242;
 	font-weight: 700;
 	font-size:95%;
 }
@@ -107,7 +107,8 @@ section header {
 
 /* Github repos */
 .repos-list {
-	width:800px;
+	width:100%;
+	max-width:800px;
 	display:flex;
 	margin:auto;
 	flex-direction:row;
