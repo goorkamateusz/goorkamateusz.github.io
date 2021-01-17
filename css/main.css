@@ -29,7 +29,7 @@ body section {
 	display:flex;
 	width:100%;
 	min-height:60px;
-	max-width:1024px;
+	max-width:1240px;
 	margin:20px auto;
 	justify-content:center;
 	flex-direction:column;
@@ -43,6 +43,7 @@ body section * {
 	flex-direction: column;
 	justify-content: start;
 	vertical-align: baseline;
+	max-width:100%;
 }
 section header,
 section footer,
