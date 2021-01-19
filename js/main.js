@@ -4,9 +4,8 @@ const svg_star='<svg class="svg star" viewBox="0 0 16 16" version="1.1" width="1
 const username = "goorkamateusz"
 
 class Repo {
-    static is_stared( repo_data ){
-        return repo_data.stargazers_count > 0
-    }
+    static is_stared( repo_data )
+    { return repo_data.stargazers_count > 0 }
 
     constructor( data )
     { this.data = data }
@@ -35,9 +34,24 @@ class Repo {
         return repos_list
     }
 
+    static compare( a, b ){
+        console.log( a, b )
+        var ans = Repo._compare( a.data.stargazers_count, b.data.stargazers_count )
+        if( ans == 0 ) ans = Repo._compare( a.data.pushed_at, b.data.pushed_at )
+        return ans
+    }
+
+    static _compare( a, b )
+    { return (a < b)? 1 : ((a > b)? -1 : 0) }
+
+    static print( repo )
+    { return repo.echo() }
+
     static get_stared_repo_list( data ){
         var repos_list = []
-        data.forEach( repo => {if(Repo.is_stared(repo)) repos_list.push((new Repo(repo)).echo())})
+        data.forEach( repo => {if(Repo.is_stared(repo)) repos_list.push((new Repo(repo)))})
+        repos_list.sort(Repo.compare)
+        repos_list = repos_list.map(Repo.print)
         repos_list.push( Repo.echo_see_more() )
         return repos_list
     }
