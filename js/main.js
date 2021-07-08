@@ -127,7 +127,7 @@ $(document).ready(function(){
     )
 
     $(".social").each(function(id){
-        $(this).css("display", "flex").hide().delay(500*id).fadeIn(1000)
+        $(this).css("display", "flex").hide().delay(150*id).fadeIn(2000)
     })
 
     inc_stat()
