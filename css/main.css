@@ -67,7 +67,7 @@ section header {
 .col {
 	flex-direction:column;
 	justify-content:flex-start !important;
-
+	min-width: 200px;
 }
 .smaller-col {
 	width:30%;
@@ -90,21 +90,25 @@ section header {
 	box-shadow:0 0 20px 0 #0f0f0f;
 }
 
-#my-name {
+.title {
 	font-size:22px
 }
-#my-login {
+.subtitle {
 	margin-top:-5px;
 	font-size:20px;
 	color:#858585;
 }
-#bio {
+.description {
+	max-width: 660px;
 	margin:5px auto;
 }
 .profile-data {
 	color:#858585;
 }
 
+.title-header .title {
+	font-size: 36px;
+}
 
 /* Github repos */
 .repos-list {
@@ -190,6 +194,13 @@ section header {
 	color:#569cd6;
 }
 
+.social.bigger span {
+	font-size: 24px;
+}
+.social.highlighted {
+	border: 2px solid #569cd6;
+}
+
 /* Block styles */
 .important {
 	padding:6px;
@@ -236,4 +247,43 @@ section header {
 }
 ::-webkit-scrollbar-thumb:hover {
 	background: #4d5a5e;
+}
+
+/* Project pages */
+section.in-header {
+	width: 100%;
+	max-width: unset;
+	flex-direction: row;
+	margin-top: 0px;
+}
+
+section.in-header main .smaller-col {
+	max-width: 60px;
+	min-width: 100px;
+}
+
+section.in-header main #avatar-img {
+	max-width: 60px;
+}
+
+section.in-header main #bio,
+section.in-header main #location,
+section.in-header main #company {
+	display: none;
+}
+
+section.in-header main #my-name {
+	font-size: 20px;
+}
+
+section.in-header main #my-login {
+	font-size: 14px;
+}
+
+.prj-img {
+	max-width: 880px;
+	min-width: 96%;
+	margin: 20px;
+	border-radius: 14px;
+	box-shadow: #569cd6 2px 1px 14px 0;
 }
