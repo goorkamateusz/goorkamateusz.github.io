@@ -16,7 +16,7 @@ body *, div, a, p {
 	font-size:16px;
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
-a:link, a:visited {
+a:link, a:visited, .like-link {
 	color:#569cd6;
 	text-decoration:none;
 }
@@ -111,9 +111,28 @@ section header {
 	color:#858585;
 }
 
-.title-header .title {
+.title-con {
+	flex-direction: column;
+	justify-content: flex-start;
+	margin:auto;
+	width: fit-content;
+}
+.title-con.big .title {
 	font-size: 36px;
 }
+.title-con > * {
+	margin-left: 0px;
+}
+.title {
+	color: #d4d4d4;
+	text-align: left;
+	font-size: 28px;
+	font-weight: 500;
+}
+.subtitle {
+	font-size: 20px;
+}
+
 
 /* Github repos */
 .repos-list {
@@ -289,7 +308,7 @@ section.in-header main #my-login {
 	font-size: 14px;
 }
 
-.prj-img {
+.banner {
 	max-width: 880px;
 	min-width: 96%;
 	margin: 20px;
@@ -299,4 +318,62 @@ section.in-header main #my-login {
 
 .prj-img:hover {
 	box-shadow: #9cdcfe 2px 1px 18px 2px;
+}
+
+.row-con {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+.row-con > * {
+	margin: 0 10px;
+}
+.row-con .to-right {
+	margin-left: auto;
+}
+.row-con span {
+	flex-direction: row;
+}
+
+.proj-list {
+	display: flex;
+	flex-direction: row;
+}
+
+.proj {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	max-width: 520px;
+	width: 96%;
+	padding: 10px;
+	border-radius: 10px;
+	border: solid 2px transparent;
+	color: #d4d4d4
+}
+.proj > * {
+	margin-left: 0px;
+}
+.proj:hover {
+	background-color: #0f0f0f;
+	border-color: #569cd6;
+	box-shadow: 2px 2px 4px #858585;
+}
+.proj .proj-icon {
+	width: 56px;
+	height: 56px;
+}
+.proj .addition-icon {
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+}
+.proj .banner {
+	width: 100%;
+	box-shadow: #569cd6 1px 1px 10px 0;
+}
+.proj .banner:hover {
+	box-shadow: #569cd6 1px 1px 10px 0;
 }
