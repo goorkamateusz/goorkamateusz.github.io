@@ -102,6 +102,11 @@ section header {
 	max-width: 660px;
 	margin:5px auto;
 }
+.long-description {
+	max-width: 660px;
+	margin:5px auto;
+	text-align: justify;
+}
 .profile-data {
 	color:#858585;
 }
@@ -178,9 +183,6 @@ section header {
 	padding:12px;
 	border-radius:12px;
 }
-.social:hover {
-	background-color:#0f0f0f;
-}
 .social * {
 	display: flex;
 }
@@ -192,6 +194,13 @@ section header {
 	font-size:18px;
 	font-weight:600;
 	color:#569cd6;
+}
+.social:hover {
+	background-color: #569cd6;
+	box-shadow: #569cd6 2px 2px 6px;
+}
+.social:hover span {
+	color: #9cdcfe;
 }
 
 .social.bigger span {
@@ -286,4 +295,8 @@ section.in-header main #my-login {
 	margin: 20px;
 	border-radius: 14px;
 	box-shadow: #569cd6 2px 1px 14px 0;
+}
+
+.prj-img:hover {
+	box-shadow: #9cdcfe 2px 1px 18px 2px;
 }
