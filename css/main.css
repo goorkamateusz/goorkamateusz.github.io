@@ -290,10 +290,13 @@ section.in-header {
 	flex-direction: row;
 	margin-top: 0px;
 }
-
+section.in-header .cols-cont,
+section.in-header .col {
+	min-width: 200px;
+}
 section.in-header main .smaller-col {
 	max-width: 60px;
-	min-width: 100px;
+	min-width: 80px;
 }
 
 section.in-header main #avatar-img {
