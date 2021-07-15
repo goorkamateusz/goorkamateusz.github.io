@@ -370,6 +370,7 @@ section.in-header main #my-login {
 .proj .proj-icon {
 	width: 56px;
 	height: 56px;
+	border-radius: 28px;
 }
 .proj .addition-icon {
 	width: 30px;
@@ -420,12 +421,40 @@ section.in-header main #my-login {
 	border-radius: 6px;
 }
 .two-column-list li span {
-	width: 50%;
+	width: 60%;
+	max-width: 380px;
 	padding: 6px;
 }
 .two-column-list li span:first-child {
-	width: 50%;
+	width: 40%;
 	text-align: right;
 	color:#9cdcfe;
 	font-weight: 600;
+}
+
+.one-column-list {
+	width: 100%;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	padding-inline-start: 0px;
+	padding-inline-end: 0px;
+	margin:0px;
+}
+.one-column-list li {
+	display: flex;
+	/* flex-direction: column; */
+	/* list-style: none; */
+	/* width: 100%; */
+}
+.one-column-list li a {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	width: 100%;
+	padding:2px 4px;
+	color:#9cdcfe;
+}
+.one-column-list li a:hover {
+	background-color: #569cd6;
+	border-radius: 6px;
 }
