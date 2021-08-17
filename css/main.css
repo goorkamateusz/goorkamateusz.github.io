@@ -130,7 +130,7 @@ section header {
 	font-size: 20px;
 }
 .title-con.page {
-	justify-content: center;
+	justify-content: left;
 }
 .title-con.page > * {
 	margin: auto;
@@ -138,7 +138,12 @@ section header {
 .title-con.page .title {
 	font-size: 36px;
 }
-
+.page .icon {
+	max-width: 120px;
+	min-width: 120px;
+	border-radius: 60px;
+	margin-right: 20px;
+}
 
 /* Github repos */
 .repos-list {
