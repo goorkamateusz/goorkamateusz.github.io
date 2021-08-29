@@ -63,6 +63,7 @@ section header {
 /* Main of section */
 .cols-cont {
 	flex-direction: row;
+	margin-bottom: 10px;
 }
 .col {
 	flex-direction:column;
