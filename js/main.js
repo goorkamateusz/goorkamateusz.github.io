@@ -32,7 +32,6 @@ class Repo {
     }
 
     static compare(a, b) {
-        console.log(a, b)
         var ans = Repo._compare(a.data.stargazers_count, b.data.stargazers_count)
         if (ans == 0) ans = Repo._compare(a.data.pushed_at, b.data.pushed_at)
         return ans
@@ -95,14 +94,6 @@ class GithubUser {
         this.load_profile()
         $("#profile").fadeIn(750)
     }
-}
-
-
-function inc_stat() {
-    if (document.location.href.split("//")[1].split(":")[0] === "127.0.0.1")
-        console.log("Local")
-    else
-        $.get("https://bit.ly/3p6iVZS")
 }
 
 
