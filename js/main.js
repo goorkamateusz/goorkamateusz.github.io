@@ -96,24 +96,6 @@ class GithubUser {
     }
 }
 
-const loadFromMikrus = (domain) => {
-    $.support.cors = true;
-    $.ajax({
-        url: domain + "test",
-        dataType: "text",
-        success: (data) => {
-            console.log(data)
-        }
-    })
-}
-
-const initContentLoading = () => {
-    $.get("/config/content-url", (data) => {
-        loadFromMikrus(data)
-    })
-}
-
-
 $(document).ready(function () {
 
     github = new GithubUser();
@@ -130,6 +112,4 @@ $(document).ready(function () {
     $(".social").each(function (id) {
         $(this).css("display", "flex").hide().delay(150 * id).fadeIn(5000)
     })
-
-    initContentLoading()
 })
