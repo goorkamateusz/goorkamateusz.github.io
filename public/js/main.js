@@ -96,7 +96,7 @@ class GithubUser {
     }
 }
 
-$(document).ready(function () {
+function startUp() {
 
     github = new GithubUser();
 
@@ -112,4 +112,11 @@ $(document).ready(function () {
     $(".social").each(function (id) {
         $(this).css("display", "flex").hide().delay(150 * id).fadeIn(5000)
     })
-})
+}
+
+function wait() {
+    if (typeof $ != 'undefined') $(document).ready(() => startUp())
+    else setTimeout(() => wait(), 50);
+}
+
+wait()
