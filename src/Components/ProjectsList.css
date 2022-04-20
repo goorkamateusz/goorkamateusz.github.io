@@ -1,0 +1,76 @@
+.proj-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 520px;
+    width: 96%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px transparent;
+    color: #d4d4d4
+}
+
+.proj>* {
+    margin-left: 0px;
+}
+
+.proj:hover {
+    background-color: #0f0f0f;
+    border-color: #569cd6;
+    box-shadow: 2px 2px 4px #858585;
+}
+
+.proj .proj-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.proj .addition-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.proj .banner {
+    width: 100%;
+    box-shadow: #569cd6 1px 1px 10px 0;
+}
+
+.proj .banner:hover {
+    box-shadow: #569cd6 1px 1px 10px 0;
+}
+
+.to-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+    margin-top: 0px;
+}
+
+.row-con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.row-con>* {
+    margin: 0 10px;
+}
+
+.row-con .to-right {
+    margin-left: auto;
+}
+
+.row-con span {
+    flex-direction: row;
+}
