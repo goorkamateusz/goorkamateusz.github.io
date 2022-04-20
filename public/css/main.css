@@ -153,7 +153,7 @@ body {
   .subtitle {
     font-size: 20px;
   }
-  
+
   .title-con.page {
     justify-content: left;
   }
@@ -161,7 +161,7 @@ body {
   .title-con.page>* {
     margin: auto;
   }
-  
+
   .title-con.page .title {
     font-size: 36px;
   }
@@ -172,7 +172,7 @@ body {
     border-radius: 60px;
     margin-right: 20px;
   }
-  
+
   .text-block {
     max-width: 440px;
     padding: 10px;
@@ -180,7 +180,7 @@ body {
     border-radius: 5px;
     color: #858585;
   }
-  
+
   /* Github repos */
   .repos-list {
     width: 100%;
@@ -244,49 +244,6 @@ body {
   .repo:hover {
     box-shadow: 3px 3px 5px 0 #4d5a5d;
     border-color: #4d5a5d;
-  }
-  
-  /* Social */
-  .social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: fit-content;
-    margin: auto;
-    padding: 12px;
-    border-radius: 12px;
-  }
-  
-  .social * {
-    display: flex;
-  }
-  
-  .social svg {
-    margin-right: 10px;
-    fill: #9cdcfe;
-  }
-  
-  .social span {
-    font-size: 18px;
-    font-weight: 600;
-    color: #569cd6;
-  }
-  
-  .social:hover {
-    background-color: #569cd6;
-    box-shadow: #569cd6 2px 2px 6px;
-  }
-  
-  .social:hover span {
-    color: #9cdcfe;
-  }
-  
-  .social.bigger span {
-    font-size: 24px;
-  }
-  
-  .social.highlighted {
-    border: 2px solid #569cd6;
   }
   
   /* Block styles */
@@ -482,7 +439,7 @@ body {
     background-color: #569cd6;
     border-radius: 6px;
   }
-  
+
   .two-column-list li span {
     width: 60%;
     max-width: 380px;

@@ -80,7 +80,6 @@ class GithubUser {
     }
 
     load_profile() {
-        $("#github-url").attr("href", this.get("html_url"))
         $("#avatar-img").attr("src", this.get("avatar_url"))
         $("#my-name").text(this.get("name"))
         $("#my-login").text(this.get("login"))

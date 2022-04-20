@@ -9,15 +9,10 @@
         "moduleResolution": "node",
         "baseUrl": "src",
         "paths": {
-            "Pages/*": [
-                "Pages/*"
-            ],
-            "Components/*": [
-                "Components/*"
-            ],
-            "Utils/*": [
-                "Utils/*"
-            ]
+            "Pages/*": [ "Pages/*" ],
+            "Components/*": [ "Components/*" ],
+            "Utils/*": [ "Utils/*" ],
+            "Img/*": [ "Img/*" ]
         }
     },
     "include": [

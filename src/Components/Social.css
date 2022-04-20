@@ -1,0 +1,41 @@
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.social * {
+    display: flex;
+}
+
+.social svg {
+    margin-right: 10px;
+    fill: #9cdcfe;
+}
+
+.social span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #569cd6;
+}
+
+.social:hover {
+    background-color: #569cd6;
+    box-shadow: #569cd6 2px 2px 6px;
+}
+
+.social:hover span {
+    color: #9cdcfe;
+}
+
+.social.bigger span {
+    font-size: 24px;
+}
+
+.social.highlighted {
+    border: 2px solid #569cd6;
+}
