@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import './ProjectsList.css'
 
 export default function ProjectsList() {
@@ -6,7 +7,7 @@ export default function ProjectsList() {
 
     return (
         <div className="proj-list">
-            <a href="cyber-fushion.html">
+            <Link to="cyber-fusion">
                 <div className="proj">
                     <div className="row-con">
                         <img className="proj-icon" src="img/cyber fushion/icon.png" />
@@ -25,7 +26,7 @@ export default function ProjectsList() {
                     </p>
                     <p className="like-link">See more...</p>
                 </div>
-            </a>
+            </Link>
         </div>
     )
 }
