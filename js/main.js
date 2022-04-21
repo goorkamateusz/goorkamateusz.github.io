@@ -80,7 +80,6 @@ class GithubUser {
     }
 
     load_profile() {
-        $("#github-url").attr("href", this.get("html_url"))
         $("#avatar-img").attr("src", this.get("avatar_url"))
         $("#my-name").text(this.get("name"))
         $("#my-login").text(this.get("login"))
@@ -96,7 +95,7 @@ class GithubUser {
     }
 }
 
-$(document).ready(function () {
+function startUp() {
 
     github = new GithubUser();
 
@@ -112,4 +111,11 @@ $(document).ready(function () {
     $(".social").each(function (id) {
         $(this).css("display", "flex").hide().delay(150 * id).fadeIn(5000)
     })
-})
+}
+
+function wait() {
+    if (typeof $ != 'undefined') $(document).ready(() => startUp())
+    else setTimeout(() => wait(), 50);
+}
+
+wait()
