@@ -48,3 +48,11 @@ b {
 ::-webkit-scrollbar-thumb:hover {
     background: #4d5a5e;
 }
+
+.banner {
+    max-width: 880px;
+    min-width: 96%;
+    margin: 20px;
+    border-radius: 14px;
+    box-shadow: #569cd6 2px 1px 14px 0;
+}

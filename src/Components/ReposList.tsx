@@ -19,7 +19,7 @@ function Repo(props: RepoProps) {
         else return <></>
     }
 
-    const module = (name: string) => <div id={name}> {props.repo[name]} </div>
+    const module = (name: string) => <div className={name}> {props.repo[name]} </div>
 
     return (
         <a className="repo" href={props.repo.html_url}>
@@ -43,7 +43,7 @@ export default function ReposList() {
         githubRepos.getData().then((value) => setRepos(value.filter(isStarred).sort(sortRule)))
 
     return (
-        <div className="repos-list" id="repos-list">
+        <div className="repos-list">
             {repos && repos.map((repo: RepoData, i: number) => <Repo key={i} repo={repo} />)}
             <a className="repo" href="https://github.com/' + username + '?tab=repositories">
                 <div id="language">See all repositories...</div>

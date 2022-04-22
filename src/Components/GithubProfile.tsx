@@ -9,18 +9,18 @@ export default function GithubProfile() {
         githubProfile.getData().then((value) => setProfile(value))
 
     return (
-        <div className="cols-cont" id="profile">
+        <div className="cols-cont profile">
             {profile && <>
                 <div className="smaller-col col">
-                    <img id="avatar-img" src={profile["avatar_url"]} />
+                    <img className="avatar-img" src={profile["avatar_url"]} />
                 </div>
                 <div className="bigger-col col">
-                    <p className="title" id="my-name">{profile["name"]}</p>
-                    <p className="subtitle" id="my-login">{profile["login"]}</p>
-                    <p className="description" id="bio">{profile["bio"]}</p>
-                    <a id="email" className="profile-data">{profile["email"]}</a>
-                    <a id="location" className="profile-data">{profile["location"]}</a>
-                    <a id="company" className="profile-data">{profile["company"]}</a>
+                    <p className="title">{profile["name"]}</p>
+                    <p className="subtitle">{profile["login"]}</p>
+                    <p className="description">{profile["bio"]}</p>
+                    <a className="profile-data">{profile["email"]}</a>
+                    <a className="profile-data">{profile["location"]}</a>
+                    <a className="profile-data">{profile["company"]}</a>
                 </div>
             </>}
         </div>

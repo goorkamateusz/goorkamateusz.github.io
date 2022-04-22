@@ -1,21 +1,17 @@
-import GithubProfile from "Components/GithubProfile";
-import { Github } from "Img/Socialmedia";
+import Social from "Components/Social";
 import * as React from "react";
+import { SubpageHader } from "../Components/SubpageHader";
+import './PageBase.css'
+import './CyberFusionPage.css'
+
+function GooglePlayIcon() {
+    return <svg className="light" height="55px" width="55px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m18.168 15.838-2.866-2.818-10.521 10.375z" /><path d="m18.168 8.167-13.387-7.557 10.521 10.375z" /><path d="m22.363 13.427c.858-.67.858-2.18-.057-2.85l-2.808-1.598-3.133 3.024 3.133 3.024z" /><path d="m2.034 24 12.234-12.002-12.234-11.997v-.001c-.619.319-1.034.9-1.034 1.655v20.69c0 .755.415 1.336 1.034 1.655z" /></svg>;
+}
 
 export default function CyberFusionPage() {
     return (
         <>
-            <section className="in-header">
-                <header>
-                    <a className="social" href="/">
-                        <Github />
-                        <span id="github-url">Main page</span>
-                    </a>
-                </header>
-                <main>
-                    <GithubProfile />
-                </main>
-            </section>
+            <SubpageHader />
 
             <section>
                 <main>
@@ -44,10 +40,9 @@ export default function CyberFusionPage() {
 
             <section>
                 <main>
-                    <a className="social bigger highlighted" href="https://play.google.com/store/apps/details?id=com.PixelStorm.CyberPolice2">
-                        <svg className="light" height="55px" width="55px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m18.168 15.838-2.866-2.818-10.521 10.375z" /><path d="m18.168 8.167-13.387-7.557 10.521 10.375z" /><path d="m22.363 13.427c.858-.67.858-2.18-.057-2.85l-2.808-1.598-3.133 3.024 3.133 3.024z" /><path d="m2.034 24 12.234-12.002-12.234-11.997v-.001c-.619.319-1.034.9-1.034 1.655v20.69c0 .755.415 1.336 1.034 1.655z" /></svg>
-                        <span>Install now!</span>
-                    </a>
+                    <Social className="bigger highlighed" href="https://play.google.com/store/apps/details?id=com.PixelStorm.CyberPolice2" icon={<GooglePlayIcon />}>
+                        Install now!
+                    </Social>
                 </main>
             </section>
 

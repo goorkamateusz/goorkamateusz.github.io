@@ -5,6 +5,7 @@ import ProjectsList from 'Components/ProjectsList';
 import ReposList from 'Components/ReposList';
 import Social from 'Components/Social';
 import { Facefook as Facebook, Github, Instagram, Linkedin, Youtube } from 'Img/Socialmedia';
+import './PageBase.css'
 
 export default function HomePage() {
     return (
