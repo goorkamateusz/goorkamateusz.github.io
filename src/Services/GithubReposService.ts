@@ -1,31 +1,15 @@
 import { githubProfile } from "./GithubProfileService";
+import ApiService from "./ApiService";
 
-class GithubReposService {
-    data: any;
-
-    constructor() {
-        this.data = undefined;
-    }
-
-    getData() {
-        return new Promise((resolve: (value: any) => void, reject) => {
-            if (this.data)
-                return this.data
-
-            githubProfile.getData().then((data) => {
+class GithubReposService extends ApiService {
+    protected loadData(resolve: (value: any) => void, reject: (reason?: any) => void) {
+        githubProfile.getData()
+            .then((data) => {
                 fetch(data["repos_url"])
-                    .then((response: Response) => {
-                        if (response.ok) {
-                            this.data = response.json()
-                            resolve(this.data)
-                        }
-                        else {
-                            reject(response)
-                        }
-                    })
-                    .catch((reason) => reject(reason))
+                    .then((response: Response) => this.setData(response, resolve, reject))
+                    .catch((reason) => reject(reason));
             })
-        })
+            .catch((reason) => reject(reason))
     }
 }
 
