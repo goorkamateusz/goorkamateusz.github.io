@@ -1,4 +1,5 @@
 .profile {
+    flex-direction: row;
     max-width: 700px;
     margin: auto;
 }
@@ -54,18 +55,6 @@
 
 .subtitle {
     font-size: 20px;
-}
-
-.title-con.page {
-    justify-content: left;
-}
-
-.title-con.page>* {
-    margin: auto;
-}
-
-.title-con.page .title {
-    font-size: 36px;
 }
 
 .page .icon {

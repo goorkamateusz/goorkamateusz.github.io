@@ -14,9 +14,7 @@ export default abstract class ApiService {
         return this.promise
     }
 
-    protected loadData(resolve: (value: any) => void, reject: (reason?: any) => void) {
-        throw new Error("Method not implemented.");
-    }
+    protected abstract loadData(resolve: (value: any) => void, reject: (reason?: any) => void): void;
 
     protected setData(response: Response, resolve: (value: any) => void, reject: (reason?: any) => void) {
         if (response.ok) {

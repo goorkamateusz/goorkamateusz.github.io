@@ -38,9 +38,22 @@ section header {
 }
 
 /* Main of section */
-.cols-cont {
+.cols-cont main {
     flex-direction: row;
     margin-bottom: 10px;
+}
+
+
+.title-con.page {
+    justify-content: left;
+}
+
+.title-con.page>* {
+    margin: auto;
+}
+
+.title-con.page .title {
+    font-size: 36px;
 }
 
 .col {

@@ -6,49 +6,37 @@ import ReposList from 'Components/ReposList';
 import Social from 'Components/Social';
 import { Facefook as Facebook, Github, Instagram, Linkedin, Youtube } from 'Img/Socialmedia';
 import './PageBase.css'
+import { Section } from "../Components/Section";
 
 export default function HomePage() {
     return (
         <>
-            <section className="first">
-                <header>
-                    <Social href="https://github.com/goorkamateusz" icon={<Github />}>Github</Social>
-                </header>
-                <main>
-                    <GithubProfile />
-                </main>
-            </section>
+            <Section name={<Social href="https://github.com/goorkamateusz" icon={<Github />}>Github</Social>} className="first">
+                <GithubProfile />
+            </Section>
 
-            <section>
+            <Section>
                 <a href="https://bit.ly/maatiug-polecajki" className="important">☑ Polecajki!</a>
-            </section>
+            </Section>
 
-            <section className="wide">
-                <header>Socialmedia</header>
-                <main className="cols-cont">
-                    <Social href='https://www.instagram.com/goorkamateusz' icon={<Instagram />}>Instagram</Social>
-                    <Social href="https://www.linkedin.com/in/gorkamateusz/" icon={<Linkedin />}> Linkedin </Social>
-                    <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social>
-                    <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social>
-                </main>
-            </section>
+            <Section className="wide cols-cont" name="Socialmedia">
+                <Social href='https://www.instagram.com/goorkamateusz' icon={<Instagram />}>Instagram</Social>
+                <Social href="https://www.linkedin.com/in/gorkamateusz/" icon={<Linkedin />}> Linkedin </Social>
+                <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social>
+                <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social>
+            </Section>
 
-            <section>
-                <header>Main projects</header>
+            <Section name="Main projects">
                 <ProjectsList />
-            </section>
+            </Section>
 
-            <section>
-                <header>Github stats</header>
-                <div>
-                    <GithubStats />
-                </div>
-            </section>
+            <Section name="Github stats">
+                <GithubStats />
+            </Section>
 
-            <section>
-                <header>Stared repositories</header>
+            <Section name="Stared repositories">
                 <ReposList />
-            </section>
+            </Section>
         </>
     )
 } 

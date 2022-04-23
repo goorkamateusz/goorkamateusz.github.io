@@ -9,7 +9,7 @@ export default function GithubProfile() {
         githubProfile.getData().then((value) => setProfile(value))
 
     return (
-        <div className="cols-cont profile">
+        <div className="profile">
             {profile && <>
                 <div className="smaller-col col">
                     <img className="avatar-img" src={profile["avatar_url"]} />
