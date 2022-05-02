@@ -1,7 +1,3 @@
-.page {
-    flex-direction: row;
-}
-
 .two-column-list {
     width: fit-content;
     margin-block-start: 0px;

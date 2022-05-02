@@ -56,18 +56,3 @@
 .subtitle {
     font-size: 20px;
 }
-
-.page .icon {
-    max-width: 120px;
-    min-width: 120px;
-    border-radius: 60px;
-    margin-right: 20px;
-}
-
-.text-block {
-    max-width: 440px;
-    padding: 10px;
-    border: 1px solid #569cd6;
-    border-radius: 5px;
-    color: #858585;
-}

@@ -2,11 +2,13 @@ import Social from "Components/Social";
 import * as React from "react";
 import { SubpageHader } from "Components/SubpageHader";
 import './PageBase.css'
-import './CyberFusionPage.css'
 import 'Components/GithubProfile.css'
-import icon from 'Pages/CyberFusion/icon.png'
 import defendTheCity from 'Pages/CyberFusion/defend-the-city.webp'
 import { Section } from "Components/Section";
+import { Member, TeamList } from "../Components/TeamList";
+import { NewsBox } from "../Components/NewsBox";
+import { Paragraph } from "../Components/Paragraph";
+import { PageTitle } from "../Components/PageTitle";
 
 function GooglePlayIcon() {
     return <svg className="light" height="55px" width="55px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m18.168 15.838-2.866-2.818-10.521 10.375z" /><path d="m18.168 8.167-13.387-7.557 10.521 10.375z" /><path d="m22.363 13.427c.858-.67.858-2.18-.057-2.85l-2.808-1.598-3.133 3.024 3.133 3.024z" /><path d="m2.034 24 12.234-12.002-12.234-11.997v-.001c-.619.319-1.034.9-1.034 1.655v20.69c0 .755.415 1.336 1.034 1.655z" /></svg>;
@@ -52,9 +54,9 @@ export default function CyberFusionPage() {
 
             <Section name="Core team">
                 <TeamList>
-                    <Member href="https://github.com/Majkel1999" name="Michał Kaleta">Our all-embracing project manager and developer. 💪</Member>
-                    <Member href="https://github.com/Emilysta" name="Emilia Starczyk">She've made most of the amazing models, graphics and useful shaders! 🖼</Member>
-                    <Member href="https://github.com/wiecek1873" name="Michał Więcek">Our developer and specialist of effects who have create every "booom" in the game! 💥</Member>
+                    <Member name="Michał Kaleta" href="https://github.com/Majkel1999">Our all-embracing project manager and developer. 💪</Member>
+                    <Member name="Emilia Starczyk" href="https://github.com/Emilysta">She've made most of the amazing models, graphics and useful shaders! 🖼</Member>
+                    <Member name="Michał Więcek" href="https://github.com/wiecek1873">Our developer and specialist of effects who have create every "booom" in the game! 💥</Member>
                     <Member name="Jakub Michalski">The UI/UX 💬 specialist who fights for the players experience from the very beginning!</Member>
                     <Member name="Sebastian Kowalik">Author of opponents models and a huge specialist in 3D graphics! 📐📏</Member>
                     <Member name="Mateusz Górka">So... me. 🙂 The guy who cares about enemies mechanics and rendering, optimisation and code architecture. 🤖</Member>
@@ -63,64 +65,3 @@ export default function CyberFusionPage() {
         </>
     )
 }
-
-interface TeamListProps {
-    children: React.ReactNode
-}
-
-function TeamList(props: TeamListProps) {
-    return <ul className="two-column-list"> {props.children} </ul>
-}
-
-interface MemberProps {
-    href?: string
-    name: string
-    children: React.ReactNode
-}
-
-function Member(props: MemberProps) {
-    return <li>
-        <a href={props.href}>
-            <span>{props.name}</span>
-            <span>{props.children}</span>
-        </a>
-    </li>
-}
-
-interface NewsBoxProps {
-    date?: string
-    children: React.ReactNode
-}
-
-function NewsBox(props: NewsBoxProps) {
-    return <div className="text-block">
-        <header>{props.date}</header>
-        <p>{props.children}</p>
-    </div>;
-}
-
-type ParagraphProps = { children: React.ReactNode };
-
-function Paragraph(props: ParagraphProps) {
-    return <p className="long-description"> {props.children} </p>;
-}
-
-interface PageTitleProps {
-    title: string
-    subtitle: string
-    banner?: string
-}
-
-function PageTitle(props: PageTitleProps) {
-    return <div>
-        <div className="page">
-            <img className="col icon" src={icon} />
-            <div className="col title-con">
-                <p className="title">{props.title}</p>
-                <p className="subtitle">{props.subtitle}</p>
-            </div>
-        </div>
-        <img className="banner" src={props.banner} />
-    </div>;
-}
-

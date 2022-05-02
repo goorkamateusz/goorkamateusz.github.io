@@ -1,0 +1,7 @@
+.newsBox {
+    max-width: 440px;
+    padding: 10px;
+    border: 1px solid #569cd6;
+    border-radius: 5px;
+    color: #858585;
+}
