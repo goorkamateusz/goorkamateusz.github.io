@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7bb1a0c.css",
-    "main.js": "/static/js/main.b0d04007.js",
+    "main.css": "/static/css/main.fc41f5f1.css",
+    "main.js": "/static/js/main.2d1cf20e.js",
     "static/js/787.044deaf1.chunk.js": "/static/js/787.044deaf1.chunk.js",
     "static/media/icon.png": "/static/media/icon.6ea9b16cf43cd1e284ae.png",
     "static/media/defend-the-city.webp": "/static/media/defend-the-city.567f701cf796b0d2a877.webp",
     "index.html": "/index.html",
     "static/media/smartphone.svg": "/static/media/smartphone.15bed2aed1ade5562394751907aebc76.svg",
     "static/media/unity.svg": "/static/media/unity.38b6bc517f8735651c0b48d3818d2fa6.svg",
-    "main.b7bb1a0c.css.map": "/static/css/main.b7bb1a0c.css.map",
-    "main.b0d04007.js.map": "/static/js/main.b0d04007.js.map",
+    "main.fc41f5f1.css.map": "/static/css/main.fc41f5f1.css.map",
+    "main.2d1cf20e.js.map": "/static/js/main.2d1cf20e.js.map",
     "787.044deaf1.chunk.js.map": "/static/js/787.044deaf1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7bb1a0c.css",
-    "static/js/main.b0d04007.js"
+    "static/css/main.fc41f5f1.css",
+    "static/js/main.2d1cf20e.js"
   ]
 }
