@@ -6,7 +6,9 @@ import ReposList from 'Components/ReposList';
 import Social from 'Components/Social';
 import { Facefook as Facebook, Github, Instagram, Linkedin, Youtube } from 'Img/Socialmedia';
 import './PageBase.css'
-import { Section } from "../Components/Section";
+import { Section } from "Components/Section";
+import { SocialCon } from "Components/SocialCon";
+import { GithubReadme } from "Components/GithubReadme";
 
 export default function HomePage() {
     return (
@@ -19,12 +21,18 @@ export default function HomePage() {
                 <a href="https://bit.ly/maatiug-polecajki" className="important">☑ Polecajki!</a>
             </Section>
 
-            <Section className="wide cols-cont" name="Socialmedia">
-                <Social href='https://www.instagram.com/goorkamateusz' icon={<Instagram />}>Instagram</Social>
-                <Social href="https://www.linkedin.com/in/gorkamateusz/" icon={<Linkedin />}> Linkedin </Social>
-                <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social>
-                <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social>
+            <Section name="Socialmedia">
+                <SocialCon>
+                    <Social href='https://www.instagram.com/goorkamateusz' icon={<Instagram />}>Instagram</Social>
+                    <Social href="https://www.linkedin.com/in/gorkamateusz/" icon={<Linkedin />}> Linkedin </Social>
+                    <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social>
+                    <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social>
+                </SocialCon>
             </Section>
+
+            {/* <Section name="">
+                <GithubReadme />
+            </Section> */}
 
             <Section name="Main projects">
                 <ProjectsList />
@@ -39,4 +47,4 @@ export default function HomePage() {
             </Section>
         </>
     )
-} 
+}

@@ -12,8 +12,8 @@ export interface PageTitleProps {
 export function PageTitle(props: PageTitleProps) {
     return <div>
         <div className="page">
-            <img className="col icon" src={icon} />
-            <div className="col title-con">
+            <img className="icon" src={icon} />
+            <div className="title-con">
                 <p className="title">{props.title}</p>
                 <p className="subtitle">{props.subtitle}</p>
             </div>

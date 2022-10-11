@@ -31,7 +31,7 @@ export default function CyberFusionPage() {
             </Section>
 
             <Section>
-                <Social className="bigger highlighed" href="https://play.google.com/store/apps/details?id=com.PixelStorm.CyberPolice2" icon={<GooglePlayIcon />}>
+                <Social className="bigger highlighted" href="https://play.google.com/store/apps/details?id=com.PixelStorm.CyberPolice2" icon={<GooglePlayIcon />}>
                     Install now!
                 </Social>
             </Section>

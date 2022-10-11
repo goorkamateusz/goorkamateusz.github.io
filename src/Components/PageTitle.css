@@ -8,3 +8,24 @@
     border-radius: 60px;
     margin-right: 20px;
 }
+
+.page .title {
+    font-size: 22px
+}
+
+.page .subtitle {
+    margin-top: -5px;
+    font-size: 20px;
+    color: #858585;
+}
+
+.page .title-con {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    width: fit-content;
+}
+
+.page .title-con>* {
+    margin-left: 0px;
+}

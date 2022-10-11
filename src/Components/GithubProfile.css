@@ -4,55 +4,67 @@
     margin: auto;
 }
 
-.avatar-img {
+.profile .avatar-img {
     max-width: 150px;
     border-radius: 150px;
     box-shadow: 0 0 20px 0 #0f0f0f;
 }
 
-.title {
+.profile .title {
     font-size: 22px
 }
 
-.subtitle {
+.profile .subtitle {
     margin-top: -5px;
     font-size: 20px;
     color: #858585;
 }
 
-.description {
+.profile .description {
     max-width: 660px;
     margin: 5px auto;
 }
 
-.long-description {
-    max-width: 660px;
-    margin: 5px auto;
-    text-align: justify;
-}
-
-.profile-data {
+.profile .profile-data {
     color: #858585;
 }
 
-.title-con {
+.profile .title-con {
     flex-direction: column;
     justify-content: flex-start;
     margin: auto;
     width: fit-content;
 }
 
-.title-con>* {
+.profile .title-con>* {
     margin-left: 0px;
 }
 
-.title {
+.profile .title {
     color: #d4d4d4;
     text-align: left;
     font-size: 28px;
     font-weight: 500;
 }
 
-.subtitle {
+.profile .subtitle {
     font-size: 20px;
+}
+
+.profile .col {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    min-width: 200px;
+}
+
+.profile .smaller-col {
+    width: 30%;
+}
+
+.profile .bigger-col {
+    width: 60%;
+}
+
+.profile .bigger-col * {
+    margin-left: 0;
 }

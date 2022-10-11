@@ -1,0 +1,38 @@
+body section {
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    max-width: 1240px;
+    margin: 20px auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body section.first {
+    margin-top: 80px;
+}
+
+body section * {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: start;
+    vertical-align: baseline;
+    max-width: 100%;
+}
+
+section header,
+section footer,
+section main {
+    width: 100%;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+section header {
+    max-width: 800px;
+    margin: auto;
+    color: #424242;
+    font-weight: 700;
+    font-size: 95%;
+}
