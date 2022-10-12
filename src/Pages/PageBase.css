@@ -1,4 +1,11 @@
+.center {
+    display: flex;
+    margin: auto;
+}
+
 .important {
+    display: flex;
+    margin: auto;
     padding: 6px;
     font-weight: 700;
     border-radius: 5px;

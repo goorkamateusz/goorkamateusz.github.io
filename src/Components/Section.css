@@ -12,7 +12,7 @@ body section.first {
     margin-top: 80px;
 }
 
-body section * {
+body section>* {
     display: flex;
     margin: auto;
     flex-direction: column;

@@ -1,6 +1,8 @@
 .socialCon {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
     width: 100%;
     margin: 0;
-    flex-direction: row;
     margin-bottom: 10px;
 }

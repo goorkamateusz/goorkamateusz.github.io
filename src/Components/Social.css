@@ -10,6 +10,7 @@
 
 .social * {
     display: flex;
+    margin: auto;
 }
 
 .social svg {

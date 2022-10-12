@@ -1,6 +1,14 @@
 .profile {
+    justify-content: start;
+    vertical-align: baseline;
     flex-direction: row;
     max-width: 700px;
+    margin: auto;
+    display: flex;
+}
+
+.profile * {
+    display: flex;
     margin: auto;
 }
 

@@ -30,13 +30,13 @@ export default function HomePage() {
                 </SocialCon>
             </Section>
 
-            {/* <Section name="">
+            <Section name="About me">
                 <GithubReadme />
-            </Section> */}
-
-            <Section name="Main projects">
-                <ProjectsList />
             </Section>
+
+            {/* <Section name="Main projects">
+                <ProjectsList />
+            </Section> */}
 
             <Section name="Github stats">
                 <GithubStats />
