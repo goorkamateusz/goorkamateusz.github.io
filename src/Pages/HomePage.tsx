@@ -16,17 +16,17 @@ export default function HomePage() {
             <Section name={<Social href="https://github.com/goorkamateusz" icon={<Github />}>Github</Social>} className="first">
                 <GithubProfile />
             </Section>
-
+{/* 
             <Section>
                 <a href="https://bit.ly/maatiug-polecajki" className="important">☑ Polecajki!</a>
-            </Section>
+            </Section> */}
 
             <Section name="Socialmedia">
                 <SocialCon>
+                    <Social href="https://www.linkedin.com/in/goorkamateusz/" icon={<Linkedin />}> Linkedin </Social>
                     <Social href='https://www.instagram.com/goorkamateusz' icon={<Instagram />}>Instagram</Social>
-                    <Social href="https://www.linkedin.com/in/gorkamateusz/" icon={<Linkedin />}> Linkedin </Social>
                     <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social>
-                    <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social>
+                    {/* <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social> */}
                 </SocialCon>
             </Section>
 
@@ -38,12 +38,12 @@ export default function HomePage() {
                 <ProjectsList />
             </Section> */}
 
-            <Section name="Github stats">
-                <GithubStats />
-            </Section>
-
             <Section name="Stared repositories">
                 <ReposList />
+            </Section>
+
+            <Section name="Github stats">
+                <GithubStats />
             </Section>
         </>
     )

@@ -44,8 +44,8 @@ export default function ReposList() {
 
     return (
         <div className="repos-list">
-            {repos && repos.map((repo: RepoData, i: number) => <Repo key={i} repo={repo} />)}
-            <a className="repo" href="https://github.com/' + username + '?tab=repositories">
+            {repos && repos.filter(((_, i) => i < 7)).map((repo: RepoData, i: number) => <Repo key={i} repo={repo} />)}
+            <a className="repo" href="https://github.com/goorkamateusz?tab=repositories">
                 <div id="language">See all repositories...</div>
             </a>
         </div >
