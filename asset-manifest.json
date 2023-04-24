@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.2af05cdd.css",
-    "main.js": "/static/js/main.21e9b846.js",
+    "main.css": "/static/css/main.567f2879.css",
+    "main.js": "/static/js/main.6a5400d2.js",
     "static/js/787.044deaf1.chunk.js": "/static/js/787.044deaf1.chunk.js",
     "static/media/icon.png": "/static/media/icon.6ea9b16cf43cd1e284ae.png",
     "static/media/defend-the-city.webp": "/static/media/defend-the-city.567f701cf796b0d2a877.webp",
     "index.html": "/index.html",
     "static/media/smartphone.svg": "/static/media/smartphone.15bed2aed1ade5562394751907aebc76.svg",
     "static/media/unity.svg": "/static/media/unity.38b6bc517f8735651c0b48d3818d2fa6.svg",
-    "main.2af05cdd.css.map": "/static/css/main.2af05cdd.css.map",
-    "main.21e9b846.js.map": "/static/js/main.21e9b846.js.map",
+    "main.567f2879.css.map": "/static/css/main.567f2879.css.map",
+    "main.6a5400d2.js.map": "/static/js/main.6a5400d2.js.map",
     "787.044deaf1.chunk.js.map": "/static/js/787.044deaf1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2af05cdd.css",
-    "static/js/main.21e9b846.js"
+    "static/css/main.567f2879.css",
+    "static/js/main.6a5400d2.js"
   ]
 }
