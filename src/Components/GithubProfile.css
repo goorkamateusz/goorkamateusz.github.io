@@ -1,8 +1,8 @@
 .profile {
-    justify-content: start;
+    justify-content: flex-start;
     vertical-align: baseline;
     flex-direction: row;
-    max-width: 700px;
+    max-width: 500px;
     margin: auto;
     display: flex;
 }
@@ -13,7 +13,7 @@
 }
 
 .profile .avatar-img {
-    max-width: 150px;
+    width: 75%;
     border-radius: 150px;
     box-shadow: 0 0 20px 0 #0f0f0f;
 }
@@ -29,7 +29,7 @@
 }
 
 .profile .description {
-    max-width: 660px;
+    max-width: 640px;
     margin: 5px auto;
 }
 
@@ -61,8 +61,13 @@
 
 .profile .col {
     flex-direction: column;
-    justify-content: flex-start !important;
-    min-width: 200px;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 700px) {
+    .profile .col {
+        min-width: 200px;
+    }
 }
 
 .profile .smaller-col {

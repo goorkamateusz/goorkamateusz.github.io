@@ -1,41 +1,48 @@
-.page {
-    flex-direction: row;
-}
-
-.page * {
-    display: flex;
-    margin: auto;
+.pageTitleCon {
     flex-direction: column;
-    justify-content: start;
-    vertical-align: baseline;
-    max-width: 100%;
 }
 
-.page .icon {
+.pageTitleCon * {
+    margin: auto;
     display: flex;
-    max-width: 120px;
-    min-width: 120px;
-    border-radius: 60px;
-    margin-right: 20px;
 }
 
-.page .title {
+.pageTitle {
+    flex-direction: row;
+    display: flex;
+    width: fit-content;
+}
+
+.pageTitle .icon {
+    max-width: 100px;
+    min-width: 100px;
+    border-radius: 60px;
+}
+
+.pageTitle .title {
     font-size: 22px
 }
 
-.page .subtitle {
+.pageTitle .subtitle {
     margin-top: -5px;
     font-size: 20px;
     color: #858585;
 }
 
-.page .title-con {
+.pageTitle .titleCon {
     flex-direction: column;
-    justify-content: flex-start;
     margin: auto;
-    width: fit-content;
+    margin-left: 20px;
 }
 
-.page .title-con>* {
+.pageTitle .titleCon>* {
     margin-left: 0px;
+}
+
+.pageTitleCon .banner {
+    max-width: 640px;
+    width: 98%;
+    margin: 20px auto;
+    border-radius: 14px;
+    box-shadow: #569cd6 2px 1px 14px 0;
 }

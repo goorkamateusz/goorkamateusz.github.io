@@ -34,9 +34,16 @@
 }
 
 .social.bigger span {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .social.highlighted {
     border: 2px solid #569cd6;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.social.highlighted svg {
+    width: 50px;
 }

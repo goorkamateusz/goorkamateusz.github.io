@@ -4,7 +4,7 @@ import GithubStats from 'Components/GithubStats';
 import ProjectsList from 'Components/ProjectsList';
 import ReposList from 'Components/ReposList';
 import Social from 'Components/Social';
-import { Facefook as Facebook, Github, Instagram, Linkedin, Youtube } from 'Img/Socialmedia';
+import { Facefook as Facebook, Github, Instagram, Linkedin, Notion, Youtube } from 'Img/Socialmedia';
 import './PageBase.css'
 import { Section } from "Components/Section";
 import { SocialCon } from "Components/SocialCon";
@@ -16,16 +16,13 @@ export default function HomePage() {
             <Section name={<Social href="https://github.com/goorkamateusz" icon={<Github />}>Github</Social>} className="first">
                 <GithubProfile />
             </Section>
-{/* 
-            <Section>
-                <a href="https://bit.ly/maatiug-polecajki" className="important">☑ Polecajki!</a>
-            </Section> */}
 
-            <Section name="Socialmedia">
+            <Section name="See also">
                 <SocialCon>
-                    <Social href="https://www.linkedin.com/in/goorkamateusz/" icon={<Linkedin />}> Linkedin </Social>
+                    <Social href="https://www.linkedin.com/in/goorkamateusz/" className="bigger" icon={<Linkedin />}> LinkedIn </Social>
                     <Social href='https://www.instagram.com/goorkamateusz' icon={<Instagram />}>Instagram</Social>
-                    <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social>
+                    <Social href="https://maatiug.notion.site/Polecajki-ebb269922c4548c2b2a83408b602ec97" icon={<Notion />}> Polecajki</Social>
+                    {/* <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social> */}
                     {/* <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social> */}
                 </SocialCon>
             </Section>
@@ -34,17 +31,17 @@ export default function HomePage() {
                 <GithubReadme />
             </Section>
 
-            {/* <Section name="Main projects">
+            <Section name="Main projects">
                 <ProjectsList />
-            </Section> */}
+            </Section>
 
             <Section name="Stared repositories">
                 <ReposList />
             </Section>
 
-            <Section name="Github stats">
+            {/* <Section name="Github stats">
                 <GithubStats />
-            </Section>
+            </Section> */}
         </>
     )
 }

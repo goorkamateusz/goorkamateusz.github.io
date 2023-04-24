@@ -1,4 +1,5 @@
 .two-column-list {
+    margin: auto;
     width: fit-content;
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -61,7 +62,7 @@
     color: #9cdcfe;
 }
 
-.one-column-list li a:hover {
+.one-column-list li a[href]:hover {
     background-color: #569cd6;
     border-radius: 6px;
 }

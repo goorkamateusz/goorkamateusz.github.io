@@ -28,7 +28,7 @@ function Project(props: ProjectProps) {
                     {props.techs}
                 </span>
             </div>
-            {props.banner && <img className="banner" src={props.banner} />}
+            {props.banner && <img className="image" src={props.banner} />}
             <p className="brief">
                 {props.brief}
             </p>

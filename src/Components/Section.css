@@ -16,7 +16,7 @@ body section>* {
     display: flex;
     margin: auto;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     vertical-align: baseline;
     max-width: 100%;
 }

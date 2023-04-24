@@ -1,8 +1,13 @@
 /* General */
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     display: flex;
-    width: 98%;
-    margin: 1%;
+    margin: 0px;
+    padding: 0px;
     justify-content: center;
     flex-direction: column;
 
@@ -47,12 +52,4 @@ b {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #4d5a5e;
-}
-
-.banner {
-    max-width: 880px;
-    min-width: 96%;
-    margin: 20px;
-    border-radius: 14px;
-    box-shadow: #569cd6 2px 1px 14px 0;
 }

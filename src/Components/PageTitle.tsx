@@ -1,19 +1,18 @@
 import * as React from "react";
-import icon from 'Pages/CyberFusion/icon.png';
 import './PageTitle.css'
 
 export interface PageTitleProps {
     title: string
     subtitle: string
+    icon: any
     banner?: string
 }
 
-// todo css col, icon, title-con
 export function PageTitle(props: PageTitleProps) {
-    return <div>
-        <div className="page">
-            <img className="icon" src={icon} />
-            <div className="title-con">
+    return <div className="pageTitleCon">
+        <div className="pageTitle">
+            <img className="icon" src={props.icon} />
+            <div className="titleCon">
                 <p className="title">{props.title}</p>
                 <p className="subtitle">{props.subtitle}</p>
             </div>
