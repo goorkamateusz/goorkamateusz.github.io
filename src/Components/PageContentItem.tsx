@@ -13,5 +13,6 @@ export default function PageContentItem(props: PageContentItem) {
         href={"/#/" + page.path}
         name={page.title}
         desc={page.brief}
+        tags={page.tags}
         className='small'/>
 }
