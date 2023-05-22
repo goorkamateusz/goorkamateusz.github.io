@@ -1,6 +1,5 @@
 import * as React from "react"
 import GithubProfile from 'Components/GithubProfile';
-import GithubStats from 'Components/GithubStats';
 import ProjectsList from 'Components/ProjectsList';
 import ReposList from 'Components/ReposList';
 import Social from 'Components/Social';
@@ -9,6 +8,7 @@ import './PageBase.css'
 import { Section } from "Components/Section";
 import { SocialCon } from "Components/SocialCon";
 import { GithubReadme } from "Components/GithubReadme";
+import MakrdownPagesList from "Components/MakrdownPagesList";
 
 export default function HomePage() {
     return (
@@ -29,6 +29,10 @@ export default function HomePage() {
 
             <Section name="About me">
                 <GithubReadme />
+            </Section>
+
+            <Section name="Content">
+                <MakrdownPagesList />
             </Section>
 
             <Section name="Main projects">
