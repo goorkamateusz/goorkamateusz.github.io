@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.e3343f1a.css",
-    "main.js": "/static/js/main.dfedc458.js",
+    "main.js": "/static/js/main.bd2d6e6b.js",
     "static/js/787.044deaf1.chunk.js": "/static/js/787.044deaf1.chunk.js",
     "static/media/icon.png": "/static/media/icon.6ea9b16cf43cd1e284ae.png",
     "static/media/defend-the-city.webp": "/static/media/defend-the-city.567f701cf796b0d2a877.webp",
     "index.html": "/index.html",
     "main.e3343f1a.css.map": "/static/css/main.e3343f1a.css.map",
-    "main.dfedc458.js.map": "/static/js/main.dfedc458.js.map",
+    "main.bd2d6e6b.js.map": "/static/js/main.bd2d6e6b.js.map",
     "787.044deaf1.chunk.js.map": "/static/js/787.044deaf1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3343f1a.css",
-    "static/js/main.dfedc458.js"
+    "static/js/main.bd2d6e6b.js"
   ]
 }
