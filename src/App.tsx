@@ -1,5 +1,4 @@
 import MarkdownPage from 'Components/MarkdownPage';
-import CyberFusionPage from 'Pages/CyberFusionPage';
 import HomePage from 'Pages/HomePage';
 import { PAGES } from 'Pages/MarkdownPages';
 import * as React from 'react';
@@ -14,8 +13,8 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/cyber-fusion" element={<CyberFusionPage />} />
-          {markdownPages.map(p => <Route path={p.path} element={<MarkdownPage page={p} />} />)}
+          {markdownPages.map(p => <Route path={p.path} element={p.element ?? <MarkdownPage page={p} />} />)}
+          <Route path="*" element={<a href="/">404, Page not found.</a>} />
         </Routes>
       </Router>
     </>

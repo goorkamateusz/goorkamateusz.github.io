@@ -14,5 +14,6 @@ export default function PageContentItem(props: PageContentItem) {
         name={page.title}
         desc={page.brief}
         tags={page.tags}
+        banner={page.banner}
         className='small'/>
 }

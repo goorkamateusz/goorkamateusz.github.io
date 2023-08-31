@@ -19,6 +19,7 @@ export interface MakrdownPageProps {
 
 export default function MarkdownPage(props: MakrdownPageProps) {
     const [post, setPost] = useState('');
+    const [footer, setFooter] = useState(undefined);
     const page = props.page
 
     hljs.registerLanguage('javascript', javascript);
@@ -30,12 +31,19 @@ export default function MarkdownPage(props: MakrdownPageProps) {
             .then(res => res.text())
             .then(res => setPost(res))
             .catch(err => console.log(err));
+
+        fetch("content/common-footer.md")
+            .then(res => res.text())
+            .then(res => setFooter(res))
+            .catch(err => console.log(err));
     });
 
     return (
         <>
             <SubpageHader />
+
             <PageTitle title={page.title} subtitle={''} />
+
             <Section name={page.brief}>
                 <div className='markdownContainer'>
                     <Markdown>
@@ -43,6 +51,14 @@ export default function MarkdownPage(props: MakrdownPageProps) {
                     </Markdown>
                 </div>
             </Section>
+
+            {footer && <Section name="Footer">
+                <div className='markdownContainer withoutBackground'>
+                    <Markdown>
+                        {footer}
+                    </Markdown>
+                </div>
+            </Section>}
         </>
     );
 }

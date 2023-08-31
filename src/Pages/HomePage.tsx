@@ -1,6 +1,5 @@
 import * as React from "react"
 import GithubProfile from 'Components/GithubProfile';
-import ProjectsList from 'Components/ProjectsList';
 import ReposList from 'Components/ReposList';
 import Social from 'Components/Social';
 import { Facefook as Facebook, Github, Instagram, Linkedin, Notion, Youtube } from 'Img/Socialmedia';
@@ -33,10 +32,6 @@ export default function HomePage() {
 
             <Section name="Content">
                 <MakrdownPagesList />
-            </Section>
-
-            <Section name="Main projects">
-                <ProjectsList />
             </Section>
 
             <Section name="Stared repositories">
