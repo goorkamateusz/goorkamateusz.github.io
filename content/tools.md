@@ -47,19 +47,8 @@
 
 Here will be quick: Visual Studio Code or Vim.
 
-### vscode plugins
-#### LaTex
+[VS Code plugins list](/#/vscode-plugins)
 
-<summary>LTeX</summary>
-[Marketplace](https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex)
-</div>
-
-<div class="tools-category">
-### Productivity
-
-- ToDoist,
-- aText,
-- DeepL
 </div>
 </div>
 
