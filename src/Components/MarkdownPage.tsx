@@ -3,7 +3,6 @@ import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
 import csharp from 'highlight.js/lib/languages/csharp';
 
-
 import Markdown from 'markdown-to-jsx';
 
 import * as React from 'react';
@@ -46,7 +45,10 @@ export default function MarkdownPage(props: MakrdownPageProps) {
 
             <Section name={page.brief}>
                 <div className='markdownContainer'>
-                    <Markdown>
+                    <Markdown options={{
+                        wrapper: 'div',
+                        forceWrapper: true,
+                    }}>
                         {post}
                     </Markdown>
                 </div>

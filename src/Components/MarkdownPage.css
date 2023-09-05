@@ -7,6 +7,12 @@
     border-radius: 15px;
     box-shadow: 4px 4px 16px #1e1e1e;
     border: 2px solid #1e1e1e;
+
+    font-size: 14px;
+}
+
+.markdownContainer *{
+    font-size: 14px;
 }
 
 .markdownContainer.withoutBackground {
@@ -18,4 +24,88 @@
     border-radius: 15px;
     box-shadow: unset;
     border: unset;
+
+    color: #858585;
+}
+
+.markdownContainer h1,
+.markdownContainer h2,
+.markdownContainer h3,
+.markdownContainer h4,
+.markdownContainer h5,
+.markdownContainer h6 {
+    padding-bottom: 3px;
+    color: #569cd6;
+}
+
+.markdownContainer h1,
+.markdownContainer h2,
+.markdownContainer h3 {
+    padding-bottom: 3px;
+    border-bottom: 1px #666 solid;
+}
+
+.markdownContainer h1 {
+    padding-left: 1%;
+    padding-top: 6px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #6ab3ef;
+    border-bottom: 1px #6ab3ef solid;
+}
+
+.markdownContainer h2 {
+    font-size: 18px;
+    color: #6ab3ef;
+}
+
+.markdownContainer h3 {
+    font-size: 20px;
+}
+
+.markdownContainer h4,
+.markdownContainer h5 {
+    font-size: 14px;
+    margin-left: 2px;
+    padding-left: 3px;
+    border-left: 1px #666 solid;
+    border-bottom: 1px #666 solid;
+}
+
+.markdownContainer h5 {
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+.markdownContainer p,
+.markdownContainer a,
+.markdownContainer em,
+.markdownContainer strong {
+    font-weight: 400;
+}
+
+.markdownContainer em,
+.markdownContainer strong {
+    color: #569cd6;
+    font-weight: 600;
+}
+
+.markdownContainer em {}
+
+.markdownContainer strong {
+    font-weight: 800;
+}
+
+.markdownContainer code {
+    font-family: 'Roboto Mono';
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #00111d;
+    background: linear-gradient(170deg, #111 60%, #0f0f0f 100%);
+    box-shadow: 1px 1px 3px 2px #252525;
+}
+
+.markdownContainer code * {
+    font-family: 'Roboto Mono';
 }
