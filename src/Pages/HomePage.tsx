@@ -19,8 +19,8 @@ export default function HomePage() {
             <Section name="See also">
                 <SocialCon>
                     <Social href="https://www.linkedin.com/in/goorkamateusz/" className="bigger" icon={<Linkedin />}> LinkedIn </Social>
+                    <Social href="https://polecajki.notion.site/Polecajki-dbe690d94d54406a98e783875a585b9e" icon={<Notion />}> Polecajki</Social>
                     <Social href='https://www.instagram.com/goorkamateusz' icon={<Instagram />}>Instagram</Social>
-                    <Social href="https://maatiug.notion.site/Polecajki-ebb269922c4548c2b2a83408b602ec97" icon={<Notion />}> Polecajki</Social>
                     {/* <Social href="https://www.youtube.com/channel/UChwJhJpqMo2JWP5RMPyWNLw/" icon={<Youtube />}> YouTube</Social> */}
                     {/* <Social href="https://www.facebook.com/goorkamateusz" icon={<Facebook />}> Facebook </Social> */}
                 </SocialCon>
