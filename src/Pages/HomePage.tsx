@@ -7,7 +7,8 @@ import './PageBase.css'
 import { Section } from "Components/Section";
 import { SocialCon } from "Components/SocialCon";
 import { GithubReadme } from "Components/GithubReadme";
-import MakrdownPagesList from "Components/MakrdownPagesList";
+import PageList from "Components/PageList";
+import { MARKDOWN_PAGES as MARKDOWN_PAGES } from "./ContentPages";
 
 export default function HomePage() {
     return (
@@ -31,7 +32,7 @@ export default function HomePage() {
             </Section>
 
             <Section name="Content">
-                <MakrdownPagesList />
+                <PageList pages={MARKDOWN_PAGES} />
             </Section>
 
             <Section name="Stared repositories">

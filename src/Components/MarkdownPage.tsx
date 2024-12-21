@@ -7,13 +7,13 @@ import Markdown from 'markdown-to-jsx';
 
 import * as React from 'react';
 import './MarkdownPage.css';
-import { MarkdownPagesProps } from 'Pages/MarkdownPages';
+import { PageProps } from "Components/PageProps";
 import { SubpageHader } from './SubpageHader';
 import { PageTitle } from './PageTitle';
 import { Section } from './Section';
 
 export interface MakrdownPageProps {
-    page: MarkdownPagesProps
+    page: PageProps
 }
 
 export default function MarkdownPage(props: MakrdownPageProps) {
@@ -26,7 +26,7 @@ export default function MarkdownPage(props: MakrdownPageProps) {
     hljs.highlightAll()
 
     useEffect(() => {
-        fetch("content/" + page.path + ".md")
+        fetch("content/" + page.href + ".md")
             .then(res => res.text())
             .then(res => setPost(res))
             .catch(err => console.log(err));
@@ -54,7 +54,7 @@ export default function MarkdownPage(props: MakrdownPageProps) {
                 </div>
             </Section>
 
-            {footer && <Section name="Footer">
+            {footer && <Section name="Notes">
                 <div className='markdownContainer withoutBackground'>
                     <Markdown>
                         {footer}
