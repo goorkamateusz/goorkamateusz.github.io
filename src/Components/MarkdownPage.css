@@ -42,11 +42,9 @@
 .markdownContainer h2,
 .markdownContainer h3 {
     padding-bottom: 3px;
-    border-bottom: 1px #666 solid;
 }
 
 .markdownContainer h1 {
-    padding-left: 1%;
     padding-top: 6px;
     font-size: 26px;
     font-weight: 300;
@@ -55,21 +53,21 @@
 }
 
 .markdownContainer h2 {
+    padding-top: 6px;
     font-size: 18px;
-    color: #6ab3ef;
+    border-bottom: 1px #6ab3ef solid;
 }
 
 .markdownContainer h3 {
-    font-size: 20px;
+    font-size: 16px;
+    color: #6ab3ef;
 }
 
 .markdownContainer h4,
 .markdownContainer h5 {
     font-size: 14px;
     margin-left: 2px;
-    padding-left: 3px;
-    border-left: 1px #666 solid;
-    border-bottom: 1px #666 solid;
+    padding-left: 2px;
 }
 
 .markdownContainer h5 {
